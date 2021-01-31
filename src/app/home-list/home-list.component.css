@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+.story-section {
+  background-color: #f9f9f9;
+  margin: 2em;
+}
+
+
+.story-text {
+  padding: 32px;
+}
+.story-text > .genre {
+  color: #006a71;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.story-text > .heading {
+  color: #006a71;
+  font-family: 'Arbutus Slab', serif;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 3px;
+  line-height: 1.3;
+}
+.story-text > .author {
+  color: #ec524b;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 3px;
+}
+.story-text > .rating {
+  color: #e79cc2;
+  margin-bottom: 30px;
+}
+.story-text > .description {
+  color: black;
+  line-height: 2;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+ 
+}
+
+.footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+    
+  background-color: #e79cc2;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 14px 24px;
+  letter-spacing: 0.5px;
+  margin-right: 50em;
+  border-radius: 1px;
+    border-style: none;
+}
+.button:hover {
+  background-color: #fecb89;
+  color: #10d1a5;
+  cursor: pointer;
+}
+
+.story-meta {
+  color: white;
+  position: absolute;
+  bottom: 35px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  font-family: 'Crimson Text', serif;
+  font-size: 12px;
+  width: 100%;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.meta-item:not(:last-child) {
+  margin-right: 16px;
+}
+.meta-item > .icon {
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.story-cover {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 12px;
+}
+.story-cover > img {
+  width: 100%;
+  height: auto;
+}
+
+.story-description {
+  text-align: center;
+  color: #40d3b4;
+  font-family: 'Crimson Text', serif;
+  font-size: 14px;
+}

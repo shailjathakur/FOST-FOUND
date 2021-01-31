@@ -1,0 +1,48 @@
+
+<section class='story-section' *ngFor="let story of stories">
+  <div class='story-card'>
+    <div class='image'>
+      <div class='content'>
+        
+      </div>
+      <ul class='story-meta'>
+        <li class='reads meta-item'>
+          <span class='text'>
+            <div class='read'>
+         {{story.read}}
+      </div>
+          </span>
+         
+        </li>
+        <li class='likes meta-item'>
+          <span class='text'>
+           
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class='text story-text'>
+      
+      <h1 class='heading'>
+        {{story.name}}
+      </h1>
+      <div class='author'>
+        by {{story.author}}
+      </div>
+      <span class='genre'>
+        {{story.type}}
+      </span>
+      
+      <article class='description'>
+        {{story.description}}
+      </article>
+      <footer class='footer'>
+        <a class='button' routerLink="story/{{story._id}}">
+          Details
+        </a>
+      </footer>
+    </div>
+  </div>
+</section>
+
+

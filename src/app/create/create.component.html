@@ -1,0 +1,67 @@
+
+<p>EVERYONE HAS A STORY......LETS HEAR YOURS!</p>
+
+<form (ngSubmit)="createNewStory(newStory)">
+  <div class="form-group row">
+    <label for="name" class="offset-sm-2 col-sm-2 col-form-label">Title</label>
+    <div class="col-sm-4">
+      <input type="text" #tRef="ngModel" class="form-control" id="name" name="name" [(ngModel)]="newStory.name" required minlength="4"  placeholder="Story Name" ngModel required />
+      <div *ngIf="tRef.errors && (tRef.dirty || tRef.touched)" class="alert alert-danger">
+        <div [hidden]="!tRef.errors.required">
+            Please enter title!!
+        </div>
+        
+    </div>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="author" class="offset-sm-2 col-sm-2 col-form-label">Narrator</label>
+    <div class="col-sm-4">
+      <input type="text" #aRef="ngModel" class="form-control" id="author" name="author" [(ngModel)]="newStory.author" required placeholder="Narrator" ngModel pattern="[a-zA-Z. ]*" ngModel required />
+      <div *ngIf="aRef.errors && (aRef.dirty || aRef.touched)" class="alert alert-danger">
+        <div [hidden]="!aRef.errors.required">
+            Please enter Narrator Name!!
+        </div>
+        <div [hidden]="!aRef.errors.pattern">
+          Please enter a valid name!!.
+      </div>
+    </div>
+    </div>
+  </div>
+<div class="form-group row">
+    <label for="description" class="offset-sm-2 col-sm-2 col-form-label">Story</label>
+    <div class="col-sm-4">
+      <textarea class="form-control" #sRef="ngModel" id="description" name="description" [(ngModel)]="newStory.description" required  maxlength="300"placeholder="Enter your story here" ngModel required></textarea>
+      <div *ngIf="sRef.errors && (sRef.dirty || sRef.touched)" class="alert alert-danger">
+        <div [hidden]="!sRef.errors.required">
+            Please enter something!!
+        </div>
+        
+    </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="type" class="offset-sm-2 col-sm-2 col-form-label">Type</label>
+    <div class="col-sm-4">
+      <input type="text" #tRef="ngModel" class="form-control" id="type" name="type" [(ngModel)]="newStory.type" required placeholder="Type" ngModel pattern="[a-zA-Z. ]*"ngModel required/>
+      <div *ngIf="tRef.errors && (tRef.dirty || tRef.touched)" class="alert alert-danger">
+        <div [hidden]="!tRef.errors.required">
+            Please enter valid type!!
+        </div>
+        <div [hidden]="!tRef.errors.pattern">
+          Please enter a valid type!!.
+      </div>
+        
+    </div>
+    </div>
+  </div>
+  
+ 
+  
+  <div class="form-group row">
+    <div class="col-sm-6 offset-sm-2">
+      <button type="submit" class="btn btn-primary">Create</button>
+    </div>
+  </div>
+</form>

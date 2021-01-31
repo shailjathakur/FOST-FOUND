@@ -1,0 +1,58 @@
+/* Container holding the image and the text */
+
+body{
+    background: url(https://wallpaperaccess.com/full/731628.jpg);
+}
+.container {
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  button{
+    position: absolute;
+    text-align: center;
+    bottom: 20em;
+    left:  25em;
+    transform: translate(-50%,-50%);
+    background-color: #d2d3c9;
+    color: black;
+    border: 2px solid #6a097d;
+    border-radius: 12px;
+  
+  }
+  .button:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .welcome{
+      text-align: center;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 2em;
+     
+  }
+
+  .footer{
+    background: url(https://wallpaperaccess.com/full/731628.jpg);
+  }
+  @media screen and (min-width: 601px) {
+    div.text-block {
+      font-size: 10px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    div.text-block {
+      font-size: 10px;
+    }
+  }

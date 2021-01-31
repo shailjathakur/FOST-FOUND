@@ -1,0 +1,43 @@
+
+images{
+
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding-left: 2em;
+    float: left;
+    
+} 
+.images1{
+    margin-left: 600px;
+    display: table-cell;
+} 
+
+
+img{
+    
+        display: block;
+        margin-left: auto;
+        margin-right: auto ;
+        padding-left: 10em;
+        
+        
+}
+.line{
+    color:  #006a71;
+    text-align: center;
+   
+    font-size: 3em;
+    font-weight: bolder;
+   
+}
+
+body{
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://images.squarespace-cdn.com/content/v1/56128f9ae4b033aa912cb9b6/1499811195932-JJ3V23LQ90S3T9EIA2JY/ke17ZwdGBToddI8pDm48kA8NVSqYKDpxrC-7XxxBGuhZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIuSoOq30bPPWT_8fyb_OAG-40KfyORLmooo_cyVlephYKMshLAGzx4R3EDFOm1kBS/image-asset.jpeg" );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+   
+}
+

@@ -1,0 +1,104 @@
+/* You can add global styles to this file, and also import other style files */
+
+#myFooter {
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://www.torontocas.ca/sites/torontocas/files/styles/carousel_1400x475_/public/2016-08/ChildProtectionServicesBanner_0.png?h=2dfedefd&itok=fgnd_lIP");
+    color: white;
+  }
+  
+  #myFooter .row {
+    margin-bottom: 60px;
+  }
+  
+  #myFooter .info{
+    text-align: justify;
+    color: #afb0b1;
+  }
+  
+  #myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+
+    text-decoration: underline;
+  }
+  
+  #myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  
+  #myFooter .logo{
+    margin-top: 10px;
+  }
+  
+  #myFooter .second-bar .logo a{
+    color:white;
+    font-size: 15px;
+    
+    font-weight: bold;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+      text-align: center;
+      
+  }
+  
+  #myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+  }
+  
+  #myFooter a:hover,
+  #myFooter a:focus {
+    text-decoration: none;
+    color: white;
+  }
+  
+  #myFooter .second-bar {
+    
+    background-color: #776d8a;
+    text-align: center;
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 767px) {
+    #myFooter {
+      text-align: center;
+    }
+  
+    #myFooter .info{
+      text-align: center;
+    }
+  }
+  
+  
+  
+  /* CSS used for positioning the footers at the bottom of the page. */
+  /* You can remove this. */
+  
+  
+  
+  
+  #myFooter{
+    flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+    min-height: 200px;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    display: flex;
+    display: -webkit-flex;
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+  }
+  :focus {
+    outline: 3px solid red;   
+}
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}

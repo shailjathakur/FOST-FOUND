@@ -1,0 +1,28 @@
+
+div{
+    background-color: #fadcac;
+}
+
+form{
+  width: 50%;
+  margin: 0 auto;
+   
+}
+
+button{
+  margin-right: 1.5em;
+    background-color: aqua;
+    margin-bottom: 1.5em;
+    font-weight: bolder;
+}
+label{
+    color: #158467;
+    font-weight: bolder;
+    
+}
+textarea {
+  width: 700px;
+  height: 150px;
+  margin-left: 4.5em;
+}
+
